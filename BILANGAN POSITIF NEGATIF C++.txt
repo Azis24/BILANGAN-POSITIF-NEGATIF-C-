@@ -1,0 +1,36 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	//kamus
+	int angka;
+	
+	//algoritme
+	cout<<"........................................."<<endl;
+	cout<<"program menentukan bilangan nol, positif, atau negatif"<<endl;
+	cout<<"........................................."<<endl<<endl;
+	cout<<"masukan angka: ";
+	cin>>angka;
+	
+	if(angka==0){
+		
+		cout<<"bilangan nol";
+	}
+	else if(angka>0){
+		
+		cout<<"bilangan positif";
+	}
+	else {
+		
+		cout<<"bilangan negatif";
+	}
+	char LG;
+cout<<"\n \n\n Apakah anda ingin mengulang program ini kembali [ Y/T ] ?";cin>>LG;
+if (LG=='Y' || LG=='y')main(); 
+else if (LG=='T' || LG=='t') goto x;
+x:
+cout<<"Terima Kasih Atas Perhatiannya\n";
+cout<<"good bye";  
+}
